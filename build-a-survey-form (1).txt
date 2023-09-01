@@ -1,0 +1,144 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-salce=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <Title>Service Survey</title>
+  </head>
+  <body>
+    <header>
+    <h1 id="title">Board Bath & Beyond Survey</h1>
+      <p id="description">Thank you for making our services better!</p>
+    </header>
+    <hr class="line-break">
+    <form id="survey-form">
+    <div class="personal-info">
+       
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" name="name" required placeholder="John Doe">
+      <br>
+       
+       <label for="email" id="email-label">Email</label>
+       <input type="email" id="email" name="email" required placeholder="johndoe@email.com">
+      <br>
+      
+      <label for="number" id="number-label">Number of Grooms Here</label>
+      <input type="number" min="1" max="20" id="number" name="number" required placeholder="3" >
+    </div>
+    <hr>
+    <div class="services">
+    <p>Which service did we preform for you.</p>
+    <input type="radio" name="services" value="groom"><label>Groom</label>
+    <br>
+    <input type="radio" name="services" value="bath"><label>Bath</label>
+    <br>
+    <input type="radio" name="services" value="nails"><label>Nail Trim</label>
+    <br>
+    <input type="radio" name="services" value="the-works"><label>The Works</label>
+    <br>
+    <input type="radio" name="services" value="board"><label>Board</label>
+    <br>
+    <input type="radio" name="services" value="other1"><label>Other</label>
+    </div>
+    <br />
+    <div class="referrer">
+        <label>How I'd you hear about us?
+        </lable>
+          <select id="dropdown" required>
+           <option name="friend" value="1">Friend/family</option>
+           <option name="social-media" value="2">Social Media</option>
+           <option name="radio" value="3">Radio</option>
+           <option name="website" value="4">Our Website</option>
+           <option name="other" value="5">Other</option>
+          </select>
+    <fieldset>
+      <p>What do you think we can improve</p>
+      <input type="checkbox" id="time" value="time">
+      <label for="time">Timeliness</label>
+      <br>
+      <input type="checkbox" id="organization" value="organization">
+      <label for="organization">Organization</label>
+      <br>
+      <input type="checkbox" id="communication" value="communication">
+      <label for="communication">Communication</label>
+      <br>
+      <input type="checkbox" id="other3" value="other3">
+      <label for="other3">Other</label>
+    </fieldset>
+    </div>
+    <hr>
+    <label class="comments">Any comments or suggestion?</label>
+    <textarea class="suggestions"></textarea>
+    <br>
+
+      <input type="submit" id="submit">
+    </form>
+
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  background-color: rgb(25, 25, 40);
+  color: cyan;
+
+}
+header {
+  text-align: center;
+}
+.personal-info {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  
+}
+
+hr {
+  border: 2px solid;
+}
+.services {
+  display: inline-block;
+ 
+
+
+}
+
+.referrer {
+  margin-top: 2em;
+}
+form {
+  border: 4px solid grey;
+  width:800px;
+  margin: auto;
+  border-radius: 20px;
+  background-color: rgba(125, 125, 165, .5);
+}
+fieldset {
+  border: none;
+
+}
+.line-break {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.comments {
+  display: flex;
+  
+}
+.suggetions {
+  height: 40px;
+  width: 400px;
+
+}
+
+** end of undefined **
+
